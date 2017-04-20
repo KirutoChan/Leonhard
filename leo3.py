@@ -5,7 +5,11 @@ import math
 
 def primenumbers(n):
 	list = []
-	for i in range(1, int(math.sqrt(n))):
+	
+	if n > 100:
+		n = int(math.sqrt(n))
+	
+	for i in range(1, n):            # if n is small, then it seems prime numbers under sqrt(n) are not enough
 		if i % 2 != 0 or i == 2:
 			list.append(i)
 	return list
@@ -18,10 +22,12 @@ def prime(n):
 			used.append(i)
 			n = new
 	print (used)
-	return max(used)
+	return used
 
 
-print (prime(600851475143)) 
+#print (prime(600851475143)) 
+print (prime(150)) 
+
 
 
 
