@@ -16,7 +16,7 @@ def is_polindrome(n):
 		return True
 	return False
 		
-def polindrome_numbers(n):
+def polindrome_numbers():
 	polindromes = []
 	for i in range(999, 99, -1):
 		for j in range(999, 99, -1):
@@ -28,4 +28,4 @@ def polindrome_numbers(n):
 
 
 print (is_polindrome(33))
-print (polindrome_numbers(1))
+print (polindrome_numbers())
