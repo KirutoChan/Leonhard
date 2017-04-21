@@ -23,7 +23,7 @@ def polindrome_numbers():
 			s = i * j
 			if is_polindrome(i * j):
 				polindromes.append(s)
-	return max(polindromes), i , j
+	return max(polindromes)
 
 
 
