@@ -20,8 +20,10 @@ def prime(n):
 		if n % i == 0 and i != 1:
 			prime_factors.append(i)
 			n = new
+
 	if prime_factors == []:				# checks if the number is already prime itself
 		return [n]
+		
 	if n % 2 != 0 and n != 1:			# because we check only that prime numbers which are under sqrt(n), the last n isn's compared to list_prime (it's larger), so we check if it is prime or not, and if yes, add to prime factors list
 		prime_factors.append(int(n))
 	print (prime_factors)
